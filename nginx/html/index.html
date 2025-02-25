@@ -1,0 +1,67 @@
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+  html { color-scheme: light dark; }
+  body { width: 100%; margin: 0 auto;
+  font-family: Tahoma, Verdana, Arial, sans-serif; }
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60em;
+    margin: auto;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    width: 60em;
+    margin: auto;
+    padding: 0 2em;
+  }
+  @media (min-width: 72em) {
+    header {
+      max-width: 40em;
+    }
+    main {
+      max-width: 40em;
+    }
+    .img {
+      max-width: 30em;
+    }
+  }
+  @media (prefers-color-scheme: dark) {
+    path {
+      stroke: #fff;
+      stroke-width: 0.01px;
+      fill: none;
+    }
+  }
+  @media (prefers-color-scheme: light) {
+    path {
+      stroke: #111;
+      fill: none;
+    }
+  }
+</style>
+</head>
+<body>
+<header>
+<svg class="img" viewBox="-2 -2 4 4" xmlns="http://www.w3.org/2000/svg">
+<image id="docker" href="https://cdn.simpleicons.org/docker/000/fff" x="-0.5" y="-0.5" width="1" height="1"></image>
+<image id="nginx" href="https://cdn.simpleicons.org/nginx/000/fff" x="-0.25" y="-1.25" width="0.5" height="0.5"></image>
+<image id="nodejs" href="https://cdn.simpleicons.org/node.js/000/fff" x="0.62" y="-0.75" width="0.5" height="0.5"></image>
+<image id="express" href="https://cdn.simpleicons.org/express/000/fff" x="0.62" y="0.25" width="0.5" height="0.5"></image>
+<image id="prisma" href="https://cdn.simpleicons.org/prisma/000/fff" x="-0.25" y="0.75" width="0.5" height="0.5"></image>
+<image id="mysql" href="https://cdn.simpleicons.org/mysql/000/fff" x="-1.12" y="0.25" width="0.5" height="0.5"></image>
+<image id="react" href="https://cdn.simpleicons.org/react/000/fff" x="-1.12" y="-0.75" width="0.5" height="0.5"></image>
+</svg>
+</header>
+<main>
+<h1>NGINX as Reverse Proxy for Express</h1>
+<p>If you see this page, the nginx web server is successfully installed and working. Further configuration is required.</p>
+<p>Check API endpoint</p>
+<a href="http://192.168.1.103">api</a>
+</main>
+</body>
+</html>
